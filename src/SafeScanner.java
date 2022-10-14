@@ -6,7 +6,13 @@ public class SafeScanner {
          this.sc = new Scanner(System.in);
     }
     public int getInt(){
-        return 0;
+        boolean IsValid = false;
+        try {
+            return  333;
+        }
+        catch (){
+            return 0;
+        }
     }
 
     public void closeScanner(){
