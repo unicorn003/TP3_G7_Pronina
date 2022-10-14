@@ -9,7 +9,7 @@ public class SafeScanner {
         int age;
         try {
             do {
-                System.out.println("Veuillez saisir un entier positif entre de 1 et 12");
+                System.out.println("Entrez votre âge");
                 age = sc.nextInt();
             } while (age <= 0);
             return age;

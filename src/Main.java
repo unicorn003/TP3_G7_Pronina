@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SafeScanner sc = new SafeScanner();
+        int age = sc.getInt();
+        System.out.println("Votre age est âge " + age);
+        sc.closeScanner();
     }
 }
