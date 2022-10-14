@@ -6,11 +6,15 @@ public class SafeScanner {
          this.sc = new Scanner(System.in);
     }
     public int getInt(){
-        boolean IsValid = false;
+        int age;
         try {
-            return  333;
+            do {
+                System.out.println("Veuillez saisir un entier positif entre de 1 et 12");
+                age = sc.nextInt();
+            } while (age <= 0);
+            return age;
         }
-        catch (){
+        catch (Exception e){
             return 0;
         }
     }
